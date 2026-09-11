@@ -3,109 +3,723 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Professional portfolio of Claire Rigor, Software Engineer and NetSuite Technical Consultant.">
 
     <title>Claire Rigor | Software Engineer</title>
 
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <h2>Claire Rigor</h2>
+    <!-- ================= NAVIGATION ================= -->
 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                Clarizza Rigor
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#experience">Experience</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
             </ul>
+
         </nav>
+
     </header>
+
+
+    <!-- ================= MAIN ================= -->
 
     <main>
 
-        <section id="home">
-            <h1>NetSuite Technical Consultant</h1>
-            <h2>Software Engineer</h2>
 
-            <p>
-                I build practical solutions for ERP,
-                integrations, automation and business systems.
-            </p>
+        <!-- ================= HERO ================= -->
 
-            <button>View My Projects</button>
-        </section>
+        <section id="home" class="hero">
 
-        <section id="about">
-            <h2>About Me</h2>
+            <div class="hero-content">
 
-            <p>
-                I am an IT professional with experience in
-                software development, NetSuite, integrations,
-                APIs and enterprise systems.
-            </p>
-        </section>
-
-        <section id="skills">
-            <h2>Technical Skills</h2>
-
-            <p>NetSuite</p>
-            <p>SuiteScript</p>
-            <p>JavaScript</p>
-            <p>REST APIs</p>
-            <p>SuiteTalk</p>
-            <p>C# / .NET</p>
-            <p>Angular</p>
-            <p>Azure DevOps</p>
-            <p>Git</p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-
-            <article>
-                <h3>Sales Order Validation</h3>
-                <p>
-                    NetSuite customization using SuiteScript
-                    to validate Sales Order quantities.
+                <p class="eyebrow">
+                    SOFTWARE ENGINEER • NETSUITE • ERP • INTEGRATIONS
                 </p>
-            </article>
 
-            <article>
-                <h3>System Integration</h3>
-                <p>
-                    Integration between external systems
-                    and NetSuite using APIs and middleware.
+                <h1>
+                    Building practical
+                    <span>technology solutions.</span>
+                </h1>
+
+                <p class="hero-description">
+
+                    I'm Claire Rigor, a software engineer and
+                    NetSuite technical professional with experience
+                    across enterprise applications, ERP systems,
+                    integrations and software development.
+
                 </p>
-            </article>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn btn-primary">
+                        View My Projects
+                    </a>
+
+                    <a href="#contact" class="btn btn-secondary">
+                        Contact Me
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Hero Card -->
+
+            <div class="hero-card">
+
+                <div class="code-window">
+
+                    <div class="window-header">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+                    <pre><code>
+const developer = {
+    name: "Claire Rigor",
+    role: "Software Engineer",
+
+    expertise: [
+        "NetSuite",
+        "SuiteScript",
+        "JavaScript",
+        "APIs",
+        "Integrations"
+    ],
+
+    mindset: "Always learning"
+};
+                    </code></pre>
+
+                </div>
+
+            </div>
 
         </section>
 
-        <section id="experience">
-            <h2>Experience</h2>
 
-            <p>
-                Software Development and ERP experience
-                across enterprise applications.
-            </p>
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about" class="section">
+
+            <div class="section-title">
+
+                <p>ABOUT ME</p>
+
+                <h2>
+                    A diverse IT background
+                    with a continuous-learning mindset.
+                </h2>
+
+            </div>
+
+
+            <div class="about-grid">
+
+                <div>
+
+                    <p class="large-text">
+
+                        I am an IT professional with experience
+                        working across software development,
+                        enterprise applications, ERP systems,
+                        integrations and technical support.
+
+                    </p>
+
+                    <p>
+
+                        My experience has allowed me to work with
+                        different technologies and business
+                        processes. I enjoy understanding a business
+                        problem, breaking it down into smaller
+                        technical problems and finding a practical
+                        solution.
+
+                    </p>
+
+                    <p>
+
+                        I consider myself a continuous learner.
+                        Technology changes quickly, and I enjoy
+                        learning new tools while strengthening the
+                        fundamentals that support good software
+                        development.
+
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <h3>What I Bring</h3>
+
+                    <ul>
+
+                        <li>
+                            <span>01</span>
+                            Problem Solving
+                        </li>
+
+                        <li>
+                            <span>02</span>
+                            ERP & NetSuite
+                        </li>
+
+                        <li>
+                            <span>03</span>
+                            System Integration
+                        </li>
+
+                        <li>
+                            <span>04</span>
+                            Software Development
+                        </li>
+
+                        <li>
+                            <span>05</span>
+                            Technical Support
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
         </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
 
-            <p>Email: your-email@example.com</p>
+        <!-- ================= SKILLS ================= -->
+
+        <section id="skills" class="section section-dark">
+
+            <div class="section-title">
+
+                <p>TECHNICAL SKILLS</p>
+
+                <h2>
+                    Technologies & Tools
+                </h2>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+
+                    <div class="skill-number">
+                        01
+                    </div>
+
+                    <h3>NetSuite</h3>
+
+                    <p>
+                        ERP customization, SuiteScript,
+                        workflows, saved searches and
+                        technical support.
+                    </p>
+
+                    <div class="tags">
+
+                        <span>SuiteScript</span>
+                        <span>SuiteFlow</span>
+                        <span>SuiteTalk</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-number">
+                        02
+                    </div>
+
+                    <h3>Development</h3>
+
+                    <p>
+                        Software development and
+                        enterprise application development.
+                    </p>
+
+                    <div class="tags">
+
+                        <span>JavaScript</span>
+                        <span>C#</span>
+                        <span>.NET</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-number">
+                        03
+                    </div>
+
+                    <h3>Integration</h3>
+
+                    <p>
+                        Connecting systems through APIs,
+                        web services and integration platforms.
+                    </p>
+
+                    <div class="tags">
+
+                        <span>REST</span>
+                        <span>SOAP</span>
+                        <span>APIs</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-number">
+                        04
+                    </div>
+
+                    <h3>Frontend</h3>
+
+                    <p>
+                        Building responsive and user-friendly
+                        web applications.
+                    </p>
+
+                    <div class="tags">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Angular</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-number">
+                        05
+                    </div>
+
+                    <h3>DevOps</h3>
+
+                    <p>
+                        Development workflows, source control
+                        and deployment processes.
+                    </p>
+
+                    <div class="tags">
+
+                        <span>Git</span>
+                        <span>Azure</span>
+                        <span>CI/CD</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-number">
+                        06
+                    </div>
+
+                    <h3>Enterprise Systems</h3>
+
+                    <p>
+                        Experience working with business
+                        applications and enterprise processes.
+                    </p>
+
+                    <div class="tags">
+
+                        <span>ERP</span>
+                        <span>CRM</span>
+                        <span>Automation</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section id="projects" class="section">
+
+            <div class="section-title">
+
+                <p>SELECTED PROJECTS</p>
+
+                <h2>
+                    Things I've worked on
+                </h2>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <!-- Project 1 -->
+
+                <article class="project-card">
+
+                    <div class="project-top">
+
+                        <span class="project-type">
+                            NETSUITE
+                        </span>
+
+                        <span class="project-number">
+                            01
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Sales Order Validation
+                    </h3>
+
+                    <p>
+
+                        Implemented transaction validation
+                        to prevent Sales Orders from being
+                        saved when business rules were violated.
+
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>SuiteScript 2.x</span>
+                        <span>JavaScript</span>
+                        <span>User Event</span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Project 2 -->
+
+                <article class="project-card">
+
+                    <div class="project-top">
+
+                        <span class="project-type">
+                            INTEGRATION
+                        </span>
+
+                        <span class="project-number">
+                            02
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        ERP System Integration
+                    </h3>
+
+                    <p>
+
+                        Worked with integrations connecting
+                        external business systems with NetSuite
+                        through APIs and middleware.
+
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>REST API</span>
+                        <span>NetSuite</span>
+                        <span>JSON</span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Project 3 -->
+
+                <article class="project-card">
+
+                    <div class="project-top">
+
+                        <span class="project-type">
+                            AUTOMATION
+                        </span>
+
+                        <span class="project-number">
+                            03
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        ERP Process Automation
+                    </h3>
+
+                    <p>
+
+                        Designed technical solutions to reduce
+                        manual business processes through
+                        automation and system customization.
+
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>SuiteScript</span>
+                        <span>SuiteFlow</span>
+                        <span>Saved Search</span>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EXPERIENCE ================= -->
+
+        <section id="experience" class="section section-dark">
+
+            <div class="section-title">
+
+                <p>EXPERIENCE</p>
+
+                <h2>
+                    My professional journey
+                </h2>
+
+            </div>
+
+
+            <div class="timeline">
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span>
+                            Software Engineering
+                        </span>
+
+                        <h3>
+                            Enterprise Application Development
+                        </h3>
+
+                        <p>
+
+                            Experience across software development,
+                            enterprise applications, APIs,
+                            integrations and business systems.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span>
+                            ERP / NetSuite
+                        </span>
+
+                        <h3>
+                            NetSuite Technical Experience
+                        </h3>
+
+                        <p>
+
+                            Experience with NetSuite customization,
+                            SuiteScript, workflows, saved searches,
+                            integrations and production support.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span>
+                            Continuous Learning
+                        </span>
+
+                        <h3>
+                            Building & Improving
+                        </h3>
+
+                        <p>
+
+                            Currently strengthening modern web
+                            development skills by building this
+                            portfolio from scratch.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section id="contact" class="section contact-section">
+
+            <div class="contact-box">
+
+                <p class="eyebrow">
+                    LET'S CONNECT
+                </p>
+
+                <h2>
+                    Interested in working together?
+                </h2>
+
+                <p>
+
+                    I'm open to opportunities where I can
+                    contribute my technical experience while
+                    continuing to learn and grow.
+
+                </p>
+
+                <div class="contact-buttons">
+
+                    <a
+                        href="mailto:your-email@example.com"
+                        class="btn btn-primary">
+
+                        Email Me
+
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/"
+                        target="_blank"
+                        class="btn btn-secondary">
+
+                        LinkedIn
+
+                    </a>
+
+                </div>
+
+            </div>
+
         </section>
 
     </main>
 
+
+    <!-- ================= FOOTER ================= -->
+
     <footer>
-        <p>© 2026 Claire Rigor</p>
+
+        <p>
+            © 2026 Claire Rigor. Built from scratch with HTML,
+            CSS & JavaScript.
+        </p>
+
     </footer>
+
+
+    <!-- JavaScript -->
 
     <script src="js/script.js"></script>
 
