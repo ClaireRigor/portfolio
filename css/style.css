@@ -24,8 +24,9 @@ a {
     color: inherit;
 }
 
-ul {
-    list-style: none;
+.container {
+    width: min(1120px, calc(100% - 40px));
+    margin: 0 auto;
 }
 
 
@@ -57,6 +58,24 @@ ul {
     justify-content: space-between;
 
     padding: 0 30px;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+}
+
+.brand-mark {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    background: #7c3aed;
+    color: white;
+    font-size: 0.82rem;
 }
 
 .logo {
@@ -240,21 +259,24 @@ ul {
     transition: 0.4s;
 }
 
+.code-string {
+    color: #a7f3d0;
+}
+
+.code-keyword {
+    color: #c4b5fd;
+}
+
 .code-window:hover {
     transform: rotate(0deg) translateY(-5px);
 }
 
 .window-header {
     height: 45px;
-
     display: flex;
-
     align-items: center;
-
     gap: 8px;
-
     padding-left: 18px;
-
     background: #222233;
 }
 
@@ -341,62 +363,49 @@ ul {
 
 .about-grid {
     display: grid;
-
-    grid-template-columns: 1.5fr 1fr;
-
-    gap: 80px;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
 }
 
-.about-grid p {
-    color: #626276;
-
-    margin-bottom: 20px;
+.about-main p + p {
+    margin-top: 20px;
 }
 
-.about-grid .large-text {
-    color: #28283a;
-
-    font-size: 21px;
-
-    font-weight: 500;
+.about-main {
+    color: #667085;
 }
 
-.about-card {
-    padding: 35px;
+.about-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
 
-    background: white;
-
+.info-card {
+    padding: 26px;
     border: 1px solid #e5e7eb;
-
-    border-radius: 15px;
-
-    box-shadow: 0 15px 40px rgba(20, 20, 40, 0.06);
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 18px 50px rgba(17, 17, 29, 0.08);
 }
 
-.about-card h3 {
-    margin-bottom: 25px;
-}
-
-.about-card li {
-    display: flex;
-
-    align-items: center;
-
-    gap: 15px;
-
-    padding: 15px 0;
-
-    border-bottom: 1px solid #eeeeF3;
-
-    font-weight: 600;
-}
-
-.about-card li span {
+.card-icon,
+.card-label {
     color: #7c3aed;
-
-    font-size: 12px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
 }
 
+.info-card h3 {
+    margin: 12px 0 8px;
+    font-size: 1.05rem;
+}
+
+.info-card p {
+    color:  #667085;
+    font-size: 0.88rem;
+}
 
 /* =========================================
    SKILLS
@@ -635,6 +644,58 @@ ul {
     font-size: 15px;
 }
 
+/* =========================================
+  EDUCATION AND CERTIFICATIONS
+========================================= */
+
+.education-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.education-card {
+    padding: 30px;
+    border: 1px solid  #e5e7eb;
+    border-radius:  18px;
+    background: white;
+    box-shadow:0 18px 50px rgba(17, 17, 29, 0.08);
+}
+
+.education-card h3 {
+    margin: 10px 0;
+    font-size: 1.25rem;
+}
+
+.education-card p,
+.education-card > span:last-child {
+    color:#667085;
+}
+
+.training-list {
+    columns: 2;
+    padding-left: 18px;
+    color: #667085;
+}
+
+.training-list li {
+    margin: 6px 0;
+}
+
+.additional-tools {
+    margin-top: 20px;
+    padding: 28px;
+    border-radius: 18px;
+    background: #ede9fe;
+}
+
+.additional-tools h3 {
+    margin-bottom: 6px;
+}
+
+.additional-tools p {
+    color: #51456d;
+}
 
 /* =========================================
    CONTACT
@@ -689,16 +750,22 @@ ul {
    FOOTER
 ========================================= */
 
-footer {
-    padding: 30px;
+.site-footer {
+    padding: 24px 0;
+    background: #11111d;
+    color: #a7a7b7;
+    font-size: 0.82rem;
+}
 
-    text-align: center;
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
 
-    background: #0b0b13;
-
-    color: #858597;
-
-    font-size: 13px;
+.footer-content a {
+    color: white;
 }
 
 
