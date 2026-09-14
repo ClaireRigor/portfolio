@@ -30,113 +30,70 @@
 
     <!-- ================= NAVIGATION ================= -->
 
-    <header class="header">
-
-        <nav class="navbar">
-
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
             <a class="brand" href="#home" aria-label="Clarizza Rigor home">
                 <span class="brand-mark">CR</span>
                 <span>Clarizza Rigor</span>
             </a>
 
-            <button class="menu-toggle" id="menu-toggle">
-                ☰
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
 
-            <ul class="nav-links" id="nav-links">
-
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-
-                <li>
-                    <a href="#about">About</a>
-                </li>
-
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
-
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-
-                <li>
-                    <a href="#experience">Experience</a>
-                </li>
-
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-
-            </ul>
-
+            <div class="nav-links" id="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
         </nav>
-
     </header>
 
 
     <!-- ================= MAIN ================= -->
 
     <main>
-
-
         <!-- ================= HERO ================= -->
 
-        <section id="home" class="hero">
+        <section class="hero" id="home">
+            <div class="container hero-grid">
 
-            <div class="hero-content">
+                <div class="hero-content">
+                    <p class="eyebrow">SOFTWARE ENGINEER • NETSUITE TECHNICAL CONSULTANT</p>
 
-                <p class="eyebrow">
-                    SOFTWARE ENGINEER • NETSUITE TECHNICAL CONSULTANT
-                </p>
+                    <h1>Building practical,
+                        <span>technology solutions.</span>
+                    </h1>
 
-                <h1>
-                    Building practical
-                    <span>technology solutions.</span>
-                </h1>
+                    <p class="hero-text">
+                        I'm Clarizza Rigor, a software engineer and
+                        NetSuite technical professional with experience
+                        across enterprise applications, ERP consulting,
+                        integrations, software development, DevOps, QA, and production support.
+                    </p>
 
-                <p class="hero-description">
-
-                    I'm Clarizza Rigor, a software engineer and
-                    NetSuite technical professional with experience
-                    across enterprise applications, ERP consulting,
-                    integrations, software development, DevOps, QA, and production support.
-
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a href="#projects" class="btn btn-primary">
-                        View My Projects
-                    </a>
-
-                    <a href="#contact" class="btn btn-secondary">
-                        Contact Me
-                    </a>
-
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#projects">View My Projects</a>
+                        <a class="btn btn-secondary" href="#contact">Contact Me</a>
+                    </div>
                 </div>
 
-            </div>
-
-
-            <!-- Hero Card -->
-
-            <div class="hero-card">
+                <!-- Hero Card -->
 
                 <div class="code-window" aria-label="Professional profile summary">
-
-                    <div class="window-header">
-
-                        <span></span>
-                        <span></span>
-                        <span></span>
-
+                    <div class="window-bar">
+                        <span></span><span></span><span></span>
                     </div>
-<pre><code><span class="code-keyword">const</span> professional = {
+                    <pre><code><span class="code-keyword">const</span> professional = {
   name: <span class="code-string">"Clarizza Rigor"</span>,
   role: <span class="code-string">"Senior NetSuite Technical Consultant"</span>,
-  experience: <span class="code-string">"16+ years in diverse IT Field"</span>,
+  experience: <span class="code-string">"16+ years in diverse IT fields"</span>,
 
   expertise: [
     <span class="code-string">"NetSuite"</span>,
@@ -154,9 +111,7 @@
                 </div>
 
             </div>
-
         </section>
-
 
         <!-- ================= ABOUT ================= -->
 
@@ -177,28 +132,28 @@
 
                     <p>
 
-                    I am a Senior NetSuite Technical Consultant with more than 16 years of
-                    experience in IT. My background covers the full software development lifecycle,
-                    from discovery and requirements analysis through solution design, development,
-                    testing, deployment, UAT, and post-production support.
+                        I am a Senior NetSuite Technical Consultant with more than 16 years of
+                        experience in IT. My background covers the full software development lifecycle,
+                        from discovery and requirements analysis through solution design, development,
+                        testing, deployment, UAT, and post-production support.
 
                     </p>
 
                     <p>
 
-                    My recent experience has focused on NetSuite ERP solutions, including
-                    SuiteScript 2.x, SuiteFlow, SuiteBuilder, SuiteCloud SDK, SuiteAnalytics,
-                    and Advanced PDF/HTML templates using FreeMarker.
+                        My recent experience has focused on NetSuite ERP solutions, including
+                        SuiteScript 2.x, SuiteFlow, SuiteBuilder, SuiteCloud SDK, SuiteAnalytics,
+                        and Advanced PDF/HTML templates using FreeMarker.
 
                     </p>
 
                     <p>
 
-                    Before specializing in NetSuite, I worked across enterprise software
-                    development, REST APIs and microservices, SQL Server, Angular/TypeScript,
-                    CI/CD, application packaging, QA, production support, and data analysis.
-                    This diverse background helps me understand both technical implementation
-                    and the operational needs behind business systems.
+                        Before specializing in NetSuite, I worked across enterprise software
+                        development, REST APIs and microservices, SQL Server, Angular/TypeScript,
+                        CI/CD, application packaging, QA, production support, and data analysis.
+                        This diverse background helps me understand both technical implementation
+                        and the operational needs behind business systems.
 
                     </p>
 
@@ -206,29 +161,33 @@
 
 
                 <div class="about-cards">
-                <article class="info-card">
-                    <span class="card-icon">01</span>
-                    <h3>Solution Design</h3>
-                    <p>Requirements analysis, gap analysis, technical design, customization, and scalable ERP solutions.</p>
-                </article>
+                    <article class="info-card">
+                        <span class="card-icon">01</span>
+                        <h3>Solution Design</h3>
+                        <p>Requirements analysis, gap analysis, technical design, customization, and scalable ERP
+                            solutions.</p>
+                    </article>
 
-                <article class="info-card">
-                    <span class="card-icon">02</span>
-                    <h3>Development</h3>
-                    <p>SuiteScript, C#/.NET, JavaScript, TypeScript, Angular, SQL, REST APIs, and enterprise applications.</p>
-                </article>
+                    <article class="info-card">
+                        <span class="card-icon">02</span>
+                        <h3>Development</h3>
+                        <p>SuiteScript, C#/.NET, JavaScript, TypeScript, Angular, SQL, REST APIs, and enterprise
+                            applications.</p>
+                    </article>
 
-                <article class="info-card">
-                    <span class="card-icon">03</span>
-                    <h3>Production Support</h3>
-                    <p>Troubleshooting, root-cause analysis, incident management, UAT, regression testing, and continuous improvement.</p>
-                </article>
+                    <article class="info-card">
+                        <span class="card-icon">03</span>
+                        <h3>Production Support</h3>
+                        <p>Troubleshooting, root-cause analysis, incident management, UAT, regression testing, and
+                            continuous improvement.</p>
+                    </article>
 
-                <article class="info-card">
-                    <span class="card-icon">04</span>
-                    <h3>Delivery</h3>
-                    <p>Agile/Scrum, Git, CI/CD, peer code reviews, technical documentation, deployment, and stakeholder collaboration.</p>
-                </article>
+                    <article class="info-card">
+                        <span class="card-icon">04</span>
+                        <h3>Delivery</h3>
+                        <p>Agile/Scrum, Git, CI/CD, peer code reviews, technical documentation, deployment, and
+                            stakeholder collaboration.</p>
+                    </article>
                 </div>
 
             </div>
@@ -402,9 +361,9 @@
                         <span>Admin Studio</span>
                         <span>InstallShield</span>
 
-                </div>
+                    </div>
 
-            </div>
+                </div>
 
         </section>
 
@@ -610,7 +569,8 @@
                         <p>
 
                             Experience across software development,
-                            enterprise applications, APIs, Web Applications, Desktop Applications, integrations and business systems.
+                            enterprise applications, APIs, Web Applications, Desktop Applications, integrations and
+                            business systems.
 
                         </p>
 
@@ -619,7 +579,7 @@
                 </div>
 
 
-                
+
 
 
                 <div class="timeline-item">
@@ -641,7 +601,7 @@
                             Currently strengthening modern web
                             development skills by building this
                             portfolio from scratch.
-                            Learning new technologies and frameworks to improve my 
+                            Learning new technologies and frameworks to improve my
                             technical skillset and stay up-to-date with industry trends.
 
                         </p>
@@ -656,46 +616,46 @@
         </section>
 
         <section class="section section-soft" id="education">
-    <div class="container">
-        <div class="section-title">
-            <p>EDUCATION & TRAINING</p>
-            <h2>Certifications, and professional training.</h2>
-        </div>
+            <div class="container">
+                <div class="section-title">
+                    <p>EDUCATION & TRAINING</p>
+                    <h2>Certifications, and professional training.</h2>
+                </div>
 
-        <div class="education-grid">
-            <article class="education-card">
-                <span class="card-label">EDUCATION</span>
-                <h3>Bachelor of Science in Computer Engineering</h3>
-                <p>City College of Manila · Manila, Philippines</p>
-                <span>June 2003 – March 2008</span>
-            </article>
+                <div class="education-grid">
+                    <article class="education-card">
+                        <span class="card-label">EDUCATION</span>
+                        <h3>Bachelor of Science in Computer Engineering</h3>
+                        <p>City College of Manila · Manila, Philippines</p>
+                        <span>June 2003 – March 2008</span>
+                    </article>
 
-            <article class="education-card">
-                <span class="card-label">CERTIFICATIONS & TRAINING</span>
-                <ul class="training-list">
-                    <li>ITIL Foundation v3</li>
-                    <li>NetSuite Foundation Training Platform</li>
-                    <li>CI/CD Deployment Training</li>
-                    <li>Resource Manager Portal</li>
-                    <li>TESDA Passer (Computer Hardware)</li>
-                    <li>SCCM Training v2 and Deployment</li>
-                    <li>MSI Repackaging with Flexera AdminStudio</li>
-                    <li>VBScript Basic Training</li>
-                    <li>Windows 7 Basic Training Platform</li>
-                    <li>CISCO training</li>
-                </ul>
-            </article>
-        </div>
+                    <article class="education-card">
+                        <span class="card-label">CERTIFICATIONS & TRAINING</span>
+                        <ul class="training-list">
+                            <li>ITIL Foundation v3</li>
+                            <li>NetSuite Foundation Training Platform</li>
+                            <li>CI/CD Deployment Training</li>
+                            <li>Resource Manager Portal</li>
+                            <li>TESDA Passer (Computer Hardware)</li>
+                            <li>SCCM Training v2 and Deployment</li>
+                            <li>MSI Repackaging with Flexera AdminStudio</li>
+                            <li>VBScript Basic Training</li>
+                            <li>Windows 7 Basic Training Platform</li>
+                            <li>CISCO training</li>
+                        </ul>
+                    </article>
+                </div>
 
-        <div class="additional-tools">
-            <h3>Additional Tools & Technologies</h3>
-            <p>
-                OutSystems · Jira · Confluence · Visual Studio · Visual Studio Code ·
-                VMware · Windows OS & Registry · TFS · Bootstrap
-            </p>
-        </div>
-    </div>
-</section>
+                <div class="additional-tools">
+                    <h3>Additional Tools & Technologies</h3>
+                    <p>
+                        OutSystems · Jira · Confluence · Visual Studio · Visual Studio Code ·
+                        VMware · Windows OS & Registry · TFS · Bootstrap
+                    </p>
+                </div>
+            </div>
+        </section>
 
 
         <!-- ================= CONTACT ================= -->
@@ -714,9 +674,9 @@
 
                 <p>
 
-                If you're looking for a technical consultant or software professional
-                with experience across NetSuite ERP, MSI enterprise applications, integrations,
-                development, deployment, QA, and production support, I'd be happy to connect.
+                    If you're looking for a technical consultant or software professional
+                    with experience across NetSuite ERP, MSI enterprise applications, integrations,
+                    development, deployment, QA, and production support, I'd be happy to connect.
 
                 </p>
 
@@ -728,7 +688,8 @@
 
                     </a>
 
-                    <a href="https://www.linkedin.com/in/clarizza-r-06993177/" target="_blank" class="btn btn-secondary">
+                    <a href="https://www.linkedin.com/in/clarizza-r-06993177/" target="_blank"
+                        class="btn btn-secondary">
 
                         LinkedIn
 
@@ -745,12 +706,12 @@
 
     <!-- ================= FOOTER ================= -->
 
-   <footer class="site-footer">
-    <div class="container footer-content">
-        <p>© <span id="year"></span> Clarizza Rigor. Built with HTML, CSS & JavaScript.</p>
-        <a href="#home">Back to top ↑</a>
-    </div>
-   </footer>
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© <span id="year"></span> Clarizza Rigor. Built with HTML, CSS & JavaScript.</p>
+            <a href="#home">Back to top ↑</a>
+        </div>
+    </footer>
 
 
     <!-- JavaScript -->
