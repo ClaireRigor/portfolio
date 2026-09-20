@@ -92,7 +92,7 @@ a:focus-visible {
     border-radius: 12px;
     background: var(--purple);
     color: white;
-    font-size: 0.82rem;
+    font-size: 0.90rem;
 }
 
 .nav-links {
@@ -147,7 +147,7 @@ a:focus-visible {
 .eyebrow {
     margin-bottom: 14px;
     color: var(--purple);
-    font-size: 0.78rem;
+    font-size: 0.875rem;
     font-weight: 800;
     letter-spacing: 0.14em;
 }
@@ -309,7 +309,7 @@ a:focus-visible {
 .section-title p {
     color: #7c3aed;
 
-    font-size: 13px;
+    font-size: 14px;
 
     font-weight: 700;
 
@@ -597,7 +597,7 @@ a:focus-visible {
 .timeline-content span {
     color: #a78bfa;
 
-    font-size: 13px;
+    font-size: 14px;
 
     font-weight: 600;
 }
