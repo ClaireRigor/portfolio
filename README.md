@@ -7,7 +7,7 @@ A responsive professional portfolio built with HTML, CSS, and JavaScript.
 - `index.html` — page structure and professional content
 - `css/style.css` — visual design and responsive layout
 - `js/script.js` — mobile navigation and dynamic footer year
-- `TESTING.md` — Stage 5 testing checklist
+- `TESTING.md` — Testing checklist
 - `images/` — place portfolio images here
 
 ## Local development
